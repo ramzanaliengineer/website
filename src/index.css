@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF8F3;
+  color: #2E2618;
+  font-family: 'Jost', 'Inter', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3ECDF;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #9C7C24, #C9A227);
+  border-radius: 8px;
+}
+
+::selection {
+  background: #C9A227;
+  color: #2E2618;
+}
+
+:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 3px;
+}
+
+@layer components {
+  .heading-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .eyebrow {
+    @apply uppercase tracking-widest2 text-gold text-xs sm:text-sm font-medium;
+  }
+
+  .btn-gold {
+    @apply relative inline-flex items-center justify-center gap-2 px-8 py-3.5 font-sans text-xs sm:text-sm tracking-[0.2em] uppercase text-black bg-gold-gradient bg-[length:200%_100%] transition-all duration-500 hover:bg-right hover:shadow-gold;
+  }
+
+  .btn-outline {
+    @apply relative inline-flex items-center justify-center gap-2 px-8 py-3.5 font-sans text-xs sm:text-sm tracking-[0.2em] uppercase text-gold border border-gold/60 transition-all duration-500 hover:bg-gold hover:text-black hover:shadow-gold;
+  }
+
+  .glass-card {
+    @apply bg-white/55 backdrop-blur-xl border border-gold/25 shadow-glass;
+  }
+
+  .gold-divider {
+    @apply h-[1px] w-20 bg-gold-gradient bg-[length:200%_100%] mx-auto;
+  }
+
+  .container-lux {
+    @apply max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16;
+  }
+
+  .section-pad {
+    @apply py-24 sm:py-32;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #9C7C24 0%, #D4AF37 45%, #F2E2C4 60%, #D4AF37 78%, #9C7C24 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

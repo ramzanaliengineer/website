@@ -1,0 +1,28 @@
+const px = (id, w = 1000) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`
+
+export const products = [
+  { id: 'p1', name: 'Zarnigar Bridal Necklace Set', category: 'Bridal', tag: 'Best Seller', price: 'PKR 8,50,000', icon: 'crown', image: px(29038003), desc: 'A resplendent 22K gold bridal set with kundan work and natural gemstone accents, handcrafted for the modern bride.' },
+  { id: 'p2', name: 'Aabroo Diamond Solitaire Ring', category: 'Diamond', tag: 'New Arrival', price: 'PKR 4,25,000', icon: 'diamond', image: px(30541175), desc: 'A certified solitaire diamond set in 18K white gold, cut to maximise brilliance and fire.' },
+  { id: 'p3', name: 'Sitara Gold Bangles (Pair)', category: 'Gold', tag: 'Best Seller', price: 'PKR 3,10,000', icon: 'bangles', image: px(1616097), desc: 'Hand-engraved 22K gold bangles with a traditional Punjabi motif, finished to a mirror polish.' },
+  { id: 'p4', name: 'Nazneen Emerald Pendant', category: 'Gemstone', tag: 'Limited', price: 'PKR 2,60,000', icon: 'pendant', image: px(17298629), desc: 'A Colombian-origin emerald set in a hand-carved gold pendant with a fine cable chain.' },
+  { id: 'p5', name: 'Meherbano Jhumka Earrings', category: 'Earrings', tag: 'Best Seller', price: 'PKR 1,45,000', icon: 'earrings', image: px(13595676), desc: 'Classic gold jhumka earrings with fine filigree and pearl drops.' },
+  { id: 'p6', name: 'Shahkar Diamond Tennis Bracelet', category: 'Diamond', tag: 'New Arrival', price: 'PKR 6,90,000', icon: 'bracelet', image: px(31605843), desc: 'A continuous line of brilliant-cut diamonds in 18K gold, elegant for day or evening.' },
+  { id: 'p7', name: 'Rani Kundan Choker', category: 'Bridal', tag: 'Best Seller', price: 'PKR 9,80,000', icon: 'necklace', image: px(9772228), desc: 'A statement kundan choker layered with uncut stones and cultured pearls.' },
+  { id: 'p8', name: 'Sultana Gold Chain', category: 'Gold', tag: '', price: 'PKR 1,90,000', icon: 'chain', image: px(1616096), desc: 'A fine 22K rope-link gold chain, versatile for daily wear or layering.' },
+  { id: 'p9', name: 'Yasmeen Sapphire Ring', category: 'Gemstone', tag: 'Limited', price: 'PKR 3,75,000', icon: 'gem', image: px(14058109), desc: 'A Kashmir-blue sapphire flanked by a halo of diamonds in platinum-finished gold.' },
+  { id: 'p10', name: 'Dilnasheen Pearl Necklace', category: 'Necklaces', tag: '', price: 'PKR 2,20,000', icon: 'necklace', image: px(4532678), desc: 'Lustrous South Sea pearls strung on a graduated gold setting.' },
+  { id: 'p11', name: "Anmol Men's Gold Ring", category: "Men's", tag: 'New Arrival', price: 'PKR 1,35,000', icon: 'ring-solo', image: px(32622561), desc: 'A bold, sculpted 22K gold ring for the modern gentleman.' },
+  { id: 'p12', name: 'Chandni Anklet Pair', category: 'Anklets', tag: '', price: 'PKR 95,000', icon: 'anklet', image: px(7679889), desc: 'Delicately chimed gold anklets with traditional ghungroo detailing.' },
+  { id: 'p13', name: 'Yakoot Ruby Drop Earrings', category: 'Gemstone', tag: 'Limited', price: 'PKR 2,95,000', icon: 'earrings', image: px(15272716), desc: 'Pear-shaped natural rubies set in 18K gold, a striking pop of colour for evening wear.' },
+  { id: 'p14', name: 'Almas Diamond Tennis Necklace', category: 'Diamond', tag: 'Best Seller', price: 'PKR 12,40,000', icon: 'necklace', image: px(29245554), desc: 'A continuous line of brilliant diamonds, presented with matching earrings in a signature gift box.' },
+  { id: 'p15', name: 'Neelam Sapphire & Diamond Ring', category: 'Gemstone', tag: 'New Arrival', price: 'PKR 4,60,000', icon: 'gem', image: px(30541186), desc: 'A vivid blue sapphire framed by a double halo of pave diamonds in 18K gold.' },
+  { id: 'p16', name: 'Yakut Ruby Solitaire Ring', category: 'Gemstone', tag: 'Limited', price: 'PKR 3,20,000', icon: 'gem', image: px(13307186), desc: 'A deep-red natural ruby, hand-selected for colour saturation, set in a classic gold solitaire mount.' },
+  { id: 'p17', name: 'Zamurrad Emerald Cluster Ring', category: 'Gemstone', tag: '', price: 'PKR 3,85,000', icon: 'gem', image: px(13595301), desc: 'A cluster of Zambian emeralds surrounded by a delicate diamond border.' },
+  { id: 'p18', name: 'Jamuna Amethyst Drop Pendant', category: 'Gemstone', tag: 'New Arrival', price: 'PKR 1,65,000', icon: 'pendant', image: px(13300175), desc: 'A rich violet amethyst suspended from a fine gold chain, faceted for maximum sparkle.' },
+  { id: 'p19', name: 'Almas Solitaire Stud Earrings', category: 'Diamond', tag: 'Best Seller', price: 'PKR 2,80,000', icon: 'earrings', image: px(2735970), desc: 'Brilliant-cut diamond studs in 18K gold, a timeless everyday luxury.' },
+  { id: 'p20', name: 'Rani Pearl & Diamond Necklace', category: 'Necklaces', tag: 'Limited', price: 'PKR 5,50,000', icon: 'necklace', image: px(9421389), desc: 'Cultured pearls paired with diamond-set gold rondelles for a refined bridal-ready look.' },
+  { id: 'p21', name: 'Ishrat Layered Gold Necklace Set', category: 'Necklaces', tag: 'New Arrival', price: 'PKR 2,45,000', icon: 'chain', image: px(13924051), desc: 'A trending layered set of three fine gold chains, styled to be worn together or separately.' },
+  { id: 'p22', name: 'Farah Mirror-Cut Gold Earrings', category: 'Earrings', tag: 'New Arrival', price: 'PKR 1,10,000', icon: 'earrings', image: px(12585697), desc: 'Sleek, geometric gold earrings with a high-polish mirror finish — a modern take on a classic silhouette.' },
+]
+
+export const categories = ['All', 'Bridal', 'Gold', 'Diamond', 'Gemstone', 'Necklaces', 'Earrings', "Men's", 'Anklets']
