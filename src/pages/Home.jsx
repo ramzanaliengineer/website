@@ -87,7 +87,7 @@ function Hero() {
           <div className="absolute -bottom-6 -left-6 w-32 h-32 sm:w-40 sm:h-40 glass-card overflow-hidden shadow-gold-sm">
             <LuxImage
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5zdZZ0gJgRQ1xNNS9BIe2Q-z_uPWrOtmvWWQO6f5Zg&s=10"
-              alt="Diamond and emerald necklace set"
+              alt="Diamond and emerald necklace set"   
               fallbackType="diamond"
               className="w-full h-full"
               imgClassName="w-full h-full object-cover"
